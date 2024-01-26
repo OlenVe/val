@@ -1,0 +1,36 @@
+echo "# val" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/OlenVe/val.git
+git push -u origin main
+import { ethers } from "ethers";
+
+export type Fees = {
+  maxFeePerGas: bigint;
+  maxPriorityFeePerGas?: bigint;
+};
+
+export type FeeHistory = {
+  oldestBlock: number;
+  reward: string[][];
+  baseFeePerGas: string[];
+  gasUsedRatio: number[];
+};
+
+export async function get1559Fees(
+  provider: ethers.JsonRpcProvider,
+  maxFeePerGasFromConfig: bigint,
+  percentile: number,
+): Promise<Fees> {
+  const { reward, baseFeePerGas }: FeeHistory = await provider.send("eth_feeHistory", ["0x5", "latest", [percentile]]);
+
+  const maxPriorityFeePerGas =
+    reward.reduce((acc: bigint, currentValue: string[]) => acc + BigInt(currentValue[0]), 0n) / BigInt(reward.length);
+
+  if (maxPriorityFeePerGas && maxPriorityFeePerGas > maxFeePerGasFromConfig) {
+    throw new Error(
+      `Estimated miner tip of ${maxPriorityFeePerGas} exceeds configured max fee per gas of ${maxFeePerGasFromConfig}.`,
+    );
+  }
