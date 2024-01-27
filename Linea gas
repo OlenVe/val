@@ -6,12 +6,10 @@ git branch -M main
 git remote add origin https://github.com/OlenVe/val.git
 git push -u origin main
 import { ethers } from "ethers";
-
 export type Fees = {
   maxFeePerGas: bigint;
   maxPriorityFeePerGas?: bigint;
 };
-
 export type FeeHistory = {
   oldestBlock: number;
   reward: string[][];
