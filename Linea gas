@@ -16,7 +16,6 @@ export type FeeHistory = {
   baseFeePerGas: string[];
   gasUsedRatio: number[];
 };
-
 export async function get1559Fees(
   provider: ethers.JsonRpcProvider,
   maxFeePerGasFromConfig: bigint,
