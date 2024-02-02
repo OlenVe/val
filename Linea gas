@@ -31,3 +31,4 @@ export async function get1559Fees(
       `Estimated miner tip of ${maxPriorityFeePerGas} exceeds configured max fee per gas of ${maxFeePerGasFromConfig}.`,
     );
   }
+export gas linea 0.0222eth
