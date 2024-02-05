@@ -6,6 +6,8 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/OlenVe/val.git
 git push -u origin main
+get unit 21
+Import gas Linea
 import { ethers } from "ethers";
 export type Fees = {
   maxFeePerGas: bigint;
