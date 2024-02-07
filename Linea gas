@@ -1,4 +1,3 @@
-too expensive
 echo "# val" >> README.md
 git init
 git add README.md
@@ -7,12 +6,10 @@ git branch -M main
 git remote add origin https://github.com/OlenVe/val.git
 git push -u origin main
 get unit 21
-Import gas Linea
 import { ethers } from "ethers";
 export type Fees = {
   maxFeePerGas: bigint;
-  maxPriorityFeePerGas?: bigint;
-};
+  maxPriorityFeePerGas?: bigint;};
 export type FeeHistory = {
   oldestBlock: number;
   reward: string[][];
@@ -34,4 +31,4 @@ export async function get1559Fees(
       `Estimated miner tip of ${maxPriorityFeePerGas} exceeds configured max fee per gas of ${maxFeePerGasFromConfig}.`,
     );
   }
-export gas linea 0.0222eth
+export gas linea 0.001
