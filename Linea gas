@@ -1,3 +1,4 @@
+start #val
 echo "# val" >> README.md
 git init
 git add README.md
