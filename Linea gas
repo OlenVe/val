@@ -34,3 +34,4 @@ export async function get1559Fees(
   }
 export gas linea 0.001
 - balans fee 0.0005 ETH
+sexport stark net 
