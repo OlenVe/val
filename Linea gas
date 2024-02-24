@@ -8,6 +8,7 @@ git remote add origin https://github.com/OlenVe/val.git
 git push -u origin main
 get unit 21
 import { ethers } from "ethers";
+import type S
 export type Fees = {
   maxFeePerGas: bigint;
   maxPriorityFeePerGas?: bigint;};
