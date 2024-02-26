@@ -9,6 +9,8 @@ git push -u origin main
 get unit 21
 import { ethers } from "ethers";
 import type S
+type S not find more
+Enter export fole = 
 export type Fees = {
   maxFeePerGas: bigint;
   maxPriorityFeePerGas?: bigint;};
