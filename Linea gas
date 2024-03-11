@@ -35,6 +35,7 @@ export async function get1559Fees(
       `Estimated miner tip of ${maxPriorityFeePerGas} exceeds configured max fee per gas of ${maxFeePerGasFromConfig}.`,
     );
   }
-export gas linea 0.001
-- balans fee 0.0005 ETH
-sexport stark net 
+export gas linea 0.001;
+impotr linea gas station {unlock 100};
+-sudo apt;
+
