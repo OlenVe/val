@@ -26,7 +26,7 @@ export async function get1559Fees(
   percentile: number,
 ): Promise<Fees> {
   const { reward, baseFeePerGas }: FeeHistory = await provider.send("eth_feeHistory", ["0x5", "latest", [percentile]]);
-
+linea 17 march gas 32 = too hight
   const maxPriorityFeePerGas =
     reward.reduce((acc: bigint, currentValue: string[]) => acc + BigInt(currentValue[0]), 0n) / BigInt(reward.length);
 
