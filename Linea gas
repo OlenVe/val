@@ -39,3 +39,15 @@ export gas linea 0.001;
 impotr linea gas station {unlock 100};
 -sudo apt;
 
+{
+    "version": 1,
+    "isRoot": true,
+    "tools": {
+      "dotnet-repl": {
+        "version": "0.1.205",
+        "commands": [
+          "dotnet-repl"
+        ]
+      }
+    }
+  }
