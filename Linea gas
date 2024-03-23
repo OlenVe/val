@@ -35,9 +35,9 @@ linea 17 march gas 32 = too hight
       `Estimated miner tip of ${maxPriorityFeePerGas} exceeds configured max fee per gas of ${maxFeePerGasFromConfig}.`,
     );
   }
-export gas linea 0.001;
 impotr linea gas station {unlock 100};
 -sudo apt;
     "version": 1,
     "isRoot": true,
 IF FALSE = TRUE
+23 fgh gas 0.6
