@@ -41,4 +41,5 @@ impotr linea gas station {unlock 100};
     "version": 1,
     "isRoot": true,
 IF FALSE = TRUE
-23 fgh gas 0.6
+23 fgh gas 0.5 = true
+if gas 0.6 = false
